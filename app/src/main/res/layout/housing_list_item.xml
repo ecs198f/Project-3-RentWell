@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/housingItem"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- TODO: PHASE 3.1 - Update the following UI to match the provided
+            designs. feel free to change anything you'd like, just make
+            sure to make the appropriate changes in the RecyclerView adapter -->
+
+    <ImageView
+        android:id="@+id/housingImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/housingImage">
+
+        <TextView
+            android:id="@+id/housingType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="APARTMENT" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="312 University Ave. Davis, CA" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="$3000" />
+
+        <TextView
+            android:id="@+id/perMonthText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="/month" />
+
+        <TextView
+            android:id="@+id/numOfBeds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="beds: 4" />
+
+        <TextView
+            android:id="@+id/numOfBaths"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2" />
+
+        <TextView
+            android:id="@+id/covidTested"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Yes" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
